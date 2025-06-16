@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "poppins";
+    src: url(fontes/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppinsThin";
+    src: url(fontes/Poppins-Thin.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+
+
+
+#main {
+    background-image: url(imagens/banner-2.jpg.webp);
+    background-position: center center;
+    filter: brightness(100%);
+    min-height: 80vh;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+#logo {
+    margin-left: 7%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav {
+    min-width: 100%;
+    min-height: 8vb;
+    background-color: rgba(0, 0, 0, 0.483);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+li {
+    margin-right: 30%;
+}
+
+li>a {
+    color: white;
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+li>a:hover {
+    color: #FCDC00;
+    transition: 0.5s;
+}
+
+#colorido {
+    color: #FCDC00;
+}
+
+#menuBlack {
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: -65%;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+#menuBlack ul {
+    display: block;
+}
+
+#chek {
+    position: absolute;
+    top: 1.5%;
+    left: 95%;
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    display: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#chek:checked~#menuBlack {
+    top: 8%;
+}
+
+#menuBlack li {
+    margin-bottom: 20px;
+    margin-left: 8%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ededed33;
+    width: 80%;
+    z-index: 0;
+}
+
+#menuBlack a {
+    font-size: 16px;
+    z-index: 0;
+}
+
+#lupa {
+    min-width: 1%;
+    max-width: 1%;
+    max-height: 2vb;
+    min-height: 2vb;
+    margin-right: 5%;
+}
+
+#hamburger {
+    max-width: 44px;
+    max-height: 44px;
+    display: none;
+    z-index: 1;
+}
+
+@media (max-width:990px) {
+    nav {
+        background-color: black;
+    }
+
+    .liApagados,
+    #lupa {
+        opacity: 0;
+    }
+
+    #hamburger,
+    #chek {
+        display: block;
+    }
+}
+
+#titulo {
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+#titulo h2 {
+    font-size: 60px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+#titulo p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px ;
+}
+
+#titulo a{
+    padding: 10px 38px;
+    background-color: white;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#titulo a:hover{
+    background-color: #FCDC00;
+    transition: 0.5s;
+}
+
+#aside{
+    height: 350vh;
+    background-color: #F9F9FF;
+}
+
+.tamanhoss{
+    width: 100%;
+    height:10vb;
+}
+
+#blogDiv1{
+    width: 60%;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.inicioImgs{
+    max-width: 360px;
+    max-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicioImgs img{
+    position: relative;
+}
+
+.inicioTxts{
+    position: absolute;
+    max-width: 320px;
+    max-height: 180px;
+    height: 180px;
+    width: 320px;
+    background-color: rgba(0, 0, 0, 0.533);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.inicioTxts h3{
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    width: 200px;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+    margin: 10px;
+}
+
+.inicioTxts p{
+    color: white;
+    font-size: 14px;
+}
+
+.inicioImgs:hover .inicioTxts{
+    background-color: #fcda00ad;
+    transition: 0.5s;
+}
+
+#blogArea{
+    display: flex;
+    
+    width: 60%;
+    justify-self: center;
+}
+
+.blogAreaTxt{
+    max-width: 195px;
+    max-height: 482px;
+    height: 483px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+.blogAreaTxt span{
+    color: #FCDC00;
+}
+
+.blogAreaTxt p{
+    text-align: right;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+
+.pum{
+    color: #777777;
+}
+
+#colunaEsquerdaBlog{
+    display: flex;
+    flex-direction: column;
+}
+
+.blogAreaTxt img{
+    width: 18px;
+    padding-left: 10px;
+}
+
+.colunaMeioBlog{
+    max-width: 555px;
+    max-height:482px ;
+    margin-bottom: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.colunaMeioBlog h2{
+    color: #222222;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.colunaMeioBlog p{
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.colunaMeioBlog a{
+    padding: 10px 38px;
+    background-color: #FFFEF8;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.colunaMeioBlog a:hover{
+    background-color: #FCDC00;
+    transition: 0.5s;
+}
+
+#colunaDireitaBlog{
+    height: 2003px;
+    width: 338px;
+    max-height: 2003px;
+    max-width: 338px;
+    border: 1px solid #eeeeee;
+    padding-left: 15px ;
+    padding-right: 15px;
+    padding: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#barraDePesquisa{
+    height: 72px;
+    width: 320px;
+    border-bottom: 1px solid #eeeeee ;
+    margin-top: 30px;
+    
+}
+
+#barraDePesquisa a{
+    padding: 10px 99px;
+    border-radius: 20px;
+    background-color: #FCDC00 ;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#barraDePesquisa img{
+    width: 15px;
+}
+
+#charlie{
+    width: 298px;
+    height: 420px;
+}
